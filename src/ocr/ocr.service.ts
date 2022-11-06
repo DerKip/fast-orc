@@ -5,8 +5,8 @@ import * as tesseract from 'node-tesseract-ocr';
 export class OcrService {
   config = {
     lang: 'eng',
+    psm: 7,
     oem: 1,
-    psm: 4,
   };
 
   parseImage(imageBuffer) {
